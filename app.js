@@ -23,18 +23,12 @@ class Media{
   
     getAverageRating(){
       let sumOfRatings = this.ratings.reduce((currentSum, rating) => currentSum + rating, 0)
-      /* for(let i = 0; i < this._ratings.length; i++){
-        sumOfRatings += this._ratings[i]
-      } */
+     
       return sumOfRatings/this._ratings.length
     }
   
     toggleCheckOutStatus(){
-      /* if(this._isCheckedOut){
-        isCheckedOut(false)
-      }else{
-        isCheckedOut(true)
-      } */
+     
       this._isCheckedOut = !this._isCheckedOut
     }
   
